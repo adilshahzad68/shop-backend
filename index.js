@@ -459,12 +459,12 @@ run().catch(er => console.error(er))
 
 
 
-// app.use(cors())
-
-app.use(cors({
-  origin: 'https://shop-frontend-phi.vercel.app/', // Replace with your allowed origin
+const corsOptions = {
+  origin: 'https://shop-frontend-phi.vercel.app', // Remove the trailing slash
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-}));
+};
+
+app.use(cors(corsOptions));
 
 
 

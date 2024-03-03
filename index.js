@@ -13,7 +13,7 @@ const app = express()
 const port = process.env.PORT || 10000
 
 
-
+app.use(cors())
 app.use(express.json())
 
 // const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.tkhdgb3.mongodb.net/?retryWrites=true&w=majority`;
@@ -474,7 +474,7 @@ run().catch(er => console.error(er))
 //    optionSuccessStatus:200,
 // }
 
-app.use(cors()) // Use this after the variable declaration
+ // Use this after the variable declaration
 
 
 

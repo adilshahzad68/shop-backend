@@ -454,27 +454,11 @@ async function run() {
 }
 
 
-
 run().catch(er => console.error(er))
 
 
 
-// const corsOptions = {
-//   origin: 'https://shop-frontend-phi.vercel.app', // Remove the trailing slash
-//   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-// };
 
-// app.use(cors());
-
-
-// const cors=require("cors");
-// const corsOptions ={
-//    origin:'*', 
-//    credentials:true,            //access-control-allow-credentials:true
-//    optionSuccessStatus:200,
-// }
-
- // Use this after the variable declaration
 
 
 

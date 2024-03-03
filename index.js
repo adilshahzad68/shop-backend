@@ -104,7 +104,7 @@ async function run() {
       const user = await usersCollection.findOne(query);
       console.log("useruseruseruseruser", user)
       if (user) {
-        const token = jwt.sign({ email }, process.env.TOKEN, { expiresIn: "1d" })
+        const token = jwt.sign({ email },"adil123", { expiresIn: "1d" })
         console.log(token)
         res.send({ bookToken: token })
       }

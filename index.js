@@ -13,7 +13,7 @@ const app = express()
 const port = process.env.PORT || 10000
 
 
-app.use(cors())
+
 app.use(express.json())
 
 // const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.tkhdgb3.mongodb.net/?retryWrites=true&w=majority`;
@@ -454,17 +454,17 @@ async function run() {
 }
 
 
-app.use(cors({
-  origin: 'https://shop-frontend-phi.vercel.app/', // Replace with your allowed origin
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-}));
-
-
 
 run().catch(er => console.error(er))
 
 
 
+// app.use(cors())
+
+app.use(cors({
+  origin: 'https://shop-frontend-phi.vercel.app/', // Replace with your allowed origin
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}));
 
 
 

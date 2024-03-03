@@ -454,6 +454,13 @@ async function run() {
 }
 
 
+app.use(cors({
+  origin: 'https://shop-frontend-phi.vercel.app/', // Replace with your allowed origin
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}));
+
+
+
 run().catch(er => console.error(er))
 
 

@@ -1,0 +1,63 @@
+[
+    {
+        "genre": "Men's Collection",
+        "img": "https://media.istockphoto.com/id/1293366109/photo/this-one-match-perfect-with-me.jpg?s=612x612&w=0&k=20&c=wJ6yYbRrDfdmoViuQkX39s2z_0lCiNQYgEtLU--0EbY="
+    },
+    {
+        "genre": "Women's Collection",
+        "img": "https://media.istockphoto.com/id/670741276/photo/two-cheerful-girls-shopping-for-clothes.jpg?s=170667a&w=0&k=20&c=mS3REnR64Ol1DEhmFHXWHSJtXWBQnjsOUyUoPr7_LFs="
+    },
+    {
+        "genre": "Kids Collection",
+        "img": "https://media.istockphoto.com/id/537307742/photo/cute-stylish-children.jpg?s=612x612&w=0&k=20&c=WU-V7DTbtBAYlmknXRaPR3werEx2CjsUgxUjosi3svU="
+    },
+    {
+        "genre": "Pets Collection",
+        "img": "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg"
+    },
+    {
+        "genre": "Home & Garden",
+        "img": "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg"
+    },
+    {
+        "genre": "Sports Collection",
+        "img": "https://media.istockphoto.com/id/949190756/pl/zdj%C4%99cie/r%C3%B3%C5%BCne-sprz%C4%99ty-sportowe-na-trawie.jpg?s=2048x2048&w=is&k=20&c=r4DEFvR3aqsu1pQJdIwQ0fnMxR2LHkPfnAWPBB_8Ts0="
+    },
+    {
+        "genre": "Musical Instruments",
+        "img": "https://images.pexels.com/photos/1246437/pexels-photo-1246437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "genre": "Paintings Collection",
+        "img": "https://images.pexels.com/photos/375882/pexels-photo-375882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "genre": "Computers & Laptop",
+        "img": "https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "genre": "Mobiles Collection",
+        "img": "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "genre": "Cars",
+        "img": "https://images.pexels.com/photos/831475/pexels-photo-831475.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "genre": "Motorbike",
+        "img": "https://images.pexels.com/photos/2611675/pexels-photo-2611675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "genre": "Books",
+        "img": "https://images.pexels.com/photos/207662/pexels-photo-207662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }, 
+    {
+        "genre": "Office",
+        "img": "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }, 
+    {
+        "genre": "Health & Fitness",
+        "img": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+
+]

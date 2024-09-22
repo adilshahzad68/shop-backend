@@ -170,7 +170,7 @@ async function run() {
       res.send(books)
     })
 
-    app.post('/books', verifyJWT, verifySeller, async (req, res) => {
+    app.post('/books', verifySeller, async (req, res) => {
       const user = req.body
       const post = Date()
       const result = await bookCollection.insertOne({ ...user, post: post })
@@ -234,7 +234,7 @@ async function run() {
     })
 
     // seller
-    app.get("/sellers", verifyJWT, verifyAdmin, async (req, res) => {
+    app.get("/sellers", verifyAdmin, async (req, res) => {
 
       const query = { role: "Seller" }
       const sellers = await usersCollection.find(query).toArray()
@@ -243,7 +243,7 @@ async function run() {
       res.send(sellers)
     })
 
-    app.delete('/sellers/:id', verifyJWT, verifyAdmin, async (req, res) => {
+    app.delete('/sellers/:id', verifyAdmin, async (req, res) => {
       const id = req.params.id;
       const query = { _id: ObjectId(id) }
       const result = await usersCollection.deleteOne(query)
@@ -252,7 +252,7 @@ async function run() {
     })
 
 
-    app.put('/sellers/:id', verifyJWT, verifyAdmin, async (req, res) => {
+    app.put('/sellers/:id', verifyAdmin, async (req, res) => {
       const id = req.params.id;
       console.log(id)
       const query = { _id: ObjectId(id), role: "Seller" }
@@ -292,7 +292,7 @@ async function run() {
 
     // buyers 
 
-    app.get("/buyers", verifyJWT, verifyAdmin, async (req, res) => {
+    app.get("/buyers", verifyAdmin, async (req, res) => {
 
       const query = { role: "Buyer" }
       const sellers = await usersCollection.find(query).toArray()
@@ -301,7 +301,7 @@ async function run() {
       res.send(sellers)
     })
 
-    app.delete('/buyers/:id', verifyJWT, verifyAdmin, async (req, res) => {
+    app.delete('/buyers/:id', verifyAdmin, async (req, res) => {
       const id = req.params.id;
       const query = { _id: ObjectId(id) }
       const result = await usersCollection.deleteOne(query)
@@ -347,7 +347,7 @@ async function run() {
     })
 
 
-    app.put('/books/:id', verifyJWT, verifySeller, async (req, res) => {
+    app.put('/books/:id', verifySeller, async (req, res) => {
       const id = req.params.id;
       const query = { _id: ObjectId(id) }
 

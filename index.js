@@ -170,7 +170,7 @@ async function run() {
       res.send(books)
     })
 
-    app.post('/books', verifySeller, async (req, res) => {
+    app.post('/books', async (req, res) => {
       const user = req.body
       const post = Date()
       const result = await bookCollection.insertOne({ ...user, post: post })
@@ -347,7 +347,7 @@ async function run() {
     })
 
 
-    app.put('/books/:id', verifySeller, async (req, res) => {
+    app.put('/books/:id', async (req, res) => {
       const id = req.params.id;
       const query = { _id: ObjectId(id) }
 
